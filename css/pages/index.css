@@ -1,0 +1,68 @@
+:root {
+  /* Color : Cabecera - principal - header*/
+  --colorfondo: #202020;
+}
+
+/*.pag{}*/
+
+/*
+  -
+  -
+  -
+*/
+
+.pag__cabeza {
+  height: 3rem;
+  padding-block-start: 1rem;
+  padding-inline: 15vw;
+  background-color: var(--colorfondo);
+}
+
+/*
+  -
+  -
+  -
+  */
+
+.pag__contenedor {
+  min-height: calc(100vh - 10rem);
+  border-block: 1px solid gray;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.contenedor__main {
+  width: 80%;
+  padding: 1rem 1.5rem;
+  border-inline-end: 1px solid gray;
+}
+
+.contenedor__sidebar {
+  width: 20%;
+  padding-block: 1rem;
+  background-color: #202020;
+}
+
+/*
+  -
+  -
+  -
+*/
+
+.pag__pie {
+  height: 7rem;
+  padding-block: 2rem;
+  padding-inline: 15vw;
+  background-color: var(--colorfondo);
+}
+
+.pie__texto {
+  font-size: 1.5rem;
+  margin-inline: auto;
+}
+
+/*
+  -
+  -
+  -
+*/
