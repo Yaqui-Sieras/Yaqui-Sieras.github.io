@@ -11,7 +11,7 @@
   -
 */
 
-.pag__cabeza {
+.pag__cabecera {
   height: 3rem;
   padding-block-start: 1rem;
   padding-inline: 15vw;
@@ -57,8 +57,8 @@
 }
 
 .pie__texto {
-  font-size: 1.5rem;
-  margin-inline: auto;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 /*
