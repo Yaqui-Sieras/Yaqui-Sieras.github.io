@@ -1,5 +1,8 @@
 import { useExternalCss } from "./hooks/useExternalCss";
 import "./App.css";
+import Header from "./components/Header/header.tsx";
+import Footer from "./components/Footer/footer.tsx";
+import Home from "./pages/Home/home.tsx";
 
 function App() {
   // Ejecutamos el hook pasándole las URLs
@@ -10,18 +13,11 @@ function App() {
 
   return (
     <>
-      <header className="pag__cabecera"></header>
-      <main className="pag__contenedor">
-        <div className="pag__contenido">
-          <h1 id="titulo" className="main__titulo">
-            Hola soy Yaqui
-          </h1>
-        </div>
-        <aside className="contenedor__sidebar"></aside>
+      <Header />
+      <main className="contenido">
+        <Home />
       </main>
-      <footer className="pag__pie">
-        <p className="pie__texto">&copy; 2024 Yaqui-Sieras</p>
-      </footer>
+      <Footer />
     </>
   );
 }

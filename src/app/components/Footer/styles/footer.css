@@ -1,0 +1,13 @@
+.pie_pagina {
+  height: 5dvh;
+  background-color: var(--colorfondo);
+  border-block-start: 0.1rem solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pie_pagina__texto {
+  font-size: 1.2rem;
+  text-align: center;
+}

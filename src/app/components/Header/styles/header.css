@@ -1,0 +1,7 @@
+.cabecera {
+  height: 5dvh;
+  padding-block-start: 1rem;
+  padding-inline: 15vw;
+  background-color: var(--colorfondo);
+  border-block-end: 0.1rem solid gray;
+}
