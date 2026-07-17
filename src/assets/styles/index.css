@@ -1,0 +1,17 @@
+:root {
+  color-scheme: light dark;
+  --color-oscuro: #0f0f0f;
+  --color-claro: #f0f0f0;
+}
+
+@media (prefers-contrast: high) {
+  :root {
+    --color-oscuro: black;
+    --color-claro: white;
+  }
+}
+
+body {
+  color: light-dark(var(--color-oscuro), var(--color-claro));
+  background-color: light-dark(var(--color-claro), var(--color-oscuro));
+}
