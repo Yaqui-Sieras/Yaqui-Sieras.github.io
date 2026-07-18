@@ -1,7 +1,12 @@
 .cabecera {
   height: 5dvh;
-  padding-block-start: 1rem;
-  padding-inline: 15vw;
+  padding-block: 0.5rem;
+  padding-inline: 5dvw;
   background-color: var(--colorfondo);
-  border-block-end: 0.1rem solid gray;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
 }
