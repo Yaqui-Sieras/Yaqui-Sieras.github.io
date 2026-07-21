@@ -9,6 +9,7 @@
   justify-content: start;
 }
 
-.cabecera__titulo_pag {
-  font-size: 2rem;
+.logo {
+  width: 5rem;
+  cursor: pointer;
 }
