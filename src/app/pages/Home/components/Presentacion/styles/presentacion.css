@@ -1,11 +1,10 @@
 .presentacion {
   width: 90%;
   padding: 1.5rem;
-  background-color: #202020;
   border-radius: 2rem;
   display: flex;
   flex-direction: row;
-  align-items: start;
+  align-items: center;
   justify-content: space-evenly;
   gap: 1rem;
 }
