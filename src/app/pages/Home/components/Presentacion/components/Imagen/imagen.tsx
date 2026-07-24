@@ -3,9 +3,9 @@ import miFoto from "./imgs/yo.png";
 
 const Imagen = () => {
   return (
-    <picture className="imagen">
+    <figure className="imagen">
       <img src={miFoto} alt="Foto de Yaqui Sieras" className="imagen__foto" />
-    </picture>
+    </figure>
   );
 };
 
