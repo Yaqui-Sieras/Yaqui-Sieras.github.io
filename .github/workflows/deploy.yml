@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["principal"] # Se activa cuando subes cambios a main
+    branches: ["principal"] # Se activa cuando subes cambios a main / principal / nombre-rama-principal
 
   pull_request:
     branches: ["principal"]
@@ -33,20 +33,20 @@ jobs:
         with:
           version: 11
 
-      - name: Set up Node
+      - name: Set up Node con caché
         uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: pnpm
+          cache: pnpm # ⚡ Acelera las futuras instalaciones
+
+      - name: Setup Pages # 🔧 Configura rutas base automáticamente
+        uses: actions/configure-pages@v4
 
       - name: Install dependencies
         run: pnpm install
 
       - name: Build project
         run: pnpm run build
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
