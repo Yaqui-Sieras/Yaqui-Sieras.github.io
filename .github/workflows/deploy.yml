@@ -4,9 +4,6 @@ on:
   push:
     branches: ["principal"] # Se activa cuando subes cambios a main / principal / nombre-rama-principal
 
-  pull_request:
-    branches: ["principal"]
-
   workflow_dispatch:
 
 permissions:
