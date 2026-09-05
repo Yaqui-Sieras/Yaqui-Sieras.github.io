@@ -12,6 +12,7 @@
   "dependencies": {
     "react": "19.2.8",
     "react-dom": "19.2.8",
+    "sentei-css": "0.2.0"
   },
   "devDependencies": {
     "@babel/core": "8.0.1",
