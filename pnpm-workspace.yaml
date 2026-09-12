@@ -1,2 +1,2 @@
-minimumReleaseAgeExclude:
-  - sentei-css@0.2.0
+allowBuilds:
+  esbuild: false

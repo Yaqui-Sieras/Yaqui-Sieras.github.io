@@ -1,0 +1,52 @@
+---
+// src/components/ui/HeaderPage.astro
+import logoYS from '@assets/imgs/logoY-S.png';
+import HeaderLogo from '@components/ui/header/HeaderLogo.astro';
+import Navigation from "@components/ui/common/Navigation.astro";
+//import Navigation from '@components/ui/header/Navigation.astro';
+
+---
+
+<header class="header_page">
+  <div class="header_inner">
+    <HeaderLogo img={logoYS.src}/>
+    <Navigation class="header_nav" ariaLabel="Navegación principal" />
+  </div>
+</header>
+
+<style>
+  .header_page {
+    width: 100%;
+    height: 4rem;
+    background-color: #202020;
+    padding-inline: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+
+  .header_inner {
+    width: 100%;
+    max-width: 1200px;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  :global(.header_nav .nav_link) {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #e0e0e0;
+    padding: 0.5rem 0.8rem;
+    transition: color 0.2s ease;
+
+    &:hover, &.nav_link--active{
+      color: #00d26a;
+    }
+  }
+</style>

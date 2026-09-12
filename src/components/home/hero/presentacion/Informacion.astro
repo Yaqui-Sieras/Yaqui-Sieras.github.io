@@ -1,0 +1,77 @@
+---
+//
+
+---
+
+<div class="informacion">
+  <h1 class="info__titulo">Yaqueline</h1>
+  <h2 class="info_subtitulo">Desarrolladora Full Stack</h2>
+
+  <div class="info__enlaces">
+    <a class="enlaces__items enlaces__github">GH: Yaqui-Sieras</a>
+    <a class="enlaces__items enlaces__linkedin">IN: Yaqui-Sieras</a>
+  </div>
+
+  <p class="info__descripcion">
+    Apasionada desarrolladora web con experiencia en la creación de
+    aplicaciones y sitios web modernos y funcionales. Me especializo en
+    tecnologías como React, TypeScript y CSS, y siempre estoy perfeccionando
+    mis habilidades.
+  </p>
+</div>
+
+<style>
+  .informacion {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .info__titulo {
+    width: 100%;
+    font-size: 4rem;
+    font-weight: bold;
+  }
+
+  .info_subtitulo {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .info__enlaces {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+
+    & .enlaces__items {
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border: 1px solid gray;
+      border-radius: 0.5rem;
+    }
+
+    & .enlaces__github {
+      font-size: 1rem;
+      background-color: #202020;
+    }
+
+    & .enlaces__linkedin {
+      font-size: 1rem;
+      background-color: rgb(21, 66, 212);
+    }
+  }
+
+  .info__descripcion {
+    width: 95%;
+    font-size: 1.2rem;
+    text-indent: 1.5rem;
+    color: lightgray;
+  }
+</style>

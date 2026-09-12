@@ -1,0 +1,24 @@
+---
+//
+import Informacion from "@components/home/hero/presentacion/Informacion.astro";
+import Imagen from "@components/home/hero/presentacion/Imagen.astro";
+
+---
+
+<article class="presentacion">
+  <Informacion />
+  <Imagen />
+</article>
+
+<style>
+  .presentacion {
+    width: 90%;
+    padding: 1rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+</style>

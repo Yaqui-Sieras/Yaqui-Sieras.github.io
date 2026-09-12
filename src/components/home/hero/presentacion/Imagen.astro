@@ -1,0 +1,46 @@
+---
+//
+import miFoto from "@assets/imgs/yo.png";
+
+---
+
+<figure class="imagen">
+  <img src={miFoto.src} alt="Foto de Yaqui Sieras" class="imagen__foto" />
+</figure>
+
+<style>
+  .imagen {
+    position: relative;
+    width: 25%;
+    padding: 1.5rem;
+    background-color: #202020;
+    border-radius: 2rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Pseudo-elemento para la foto de fondo difuminada */
+  .imagen::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./../imgs/yo.png");
+    background-size: cover;
+    background-position: center;
+    filter: blur(15px) brightness(0.7); /* Difumina y oscurece ligeramente para el modo oscuro */
+    transform: scale(1.1); /* Evita bordes blancos por el blur */
+  }
+
+  .imagen__foto {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 1rem;
+    object-fit: contain;
+  }
+</style>

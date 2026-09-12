@@ -1,0 +1,53 @@
+---
+// src/components/ui/header/HeaderLogo.astro
+
+interface Props {
+  img?: string;
+  icon?: string;
+  texto?: string;
+}
+
+const { img, icon, texto } = Astro.props;
+
+---
+
+<a href="/" class="logo_link" aria-label="Logo">
+  <h1 class="logo_container">
+    {img && <img class="logo_img" alt="Logo" src={img} />}
+    {icon && <span class="logo_icon">{icon}</span>}
+    {texto && <span class="logo_title">{texto}</span>}
+  </h1>
+</a>
+
+<style>
+  .logo_link {
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .logo_img {
+    width: 4.5rem;
+  }
+
+  .logo_icon {
+    font-size: 1.25rem;
+  }
+
+  .logo_title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #f8fafc;
+    letter-spacing: -0.025em;
+  }
+</style>
