@@ -44,7 +44,14 @@ const getDeploymentSite = () => {
 
   // Fallback para compilaciones de producción ejecutadas localmente
   const folderName = path.basename(process.cwd());
-  return `https://${folderName}.vercel.app`;
+  const filtroGhPage = ".github.io"
+  const lgFiltro = filtroGhPage.length
+
+  const siteName = folderName.endsWith(".github.io")
+  ? folderName.slice(0, -lgFiltro)
+  : folderName;
+
+  return `https://${siteName}.vercel.app`;
 };
 
 /**
