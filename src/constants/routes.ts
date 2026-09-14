@@ -65,7 +65,7 @@ export function buildUrl(path: string, options: BuildUrlOptions = {}): string {
  */
 export const ROUTES = {
   HOME: buildUrl("/", { useAbsolute: false }),
-  PORFOLIO: buildUrl("portfolio/", { useAbsolute: true }),
+  PORFOLIO: buildUrl("porfolio/", { useAbsolute: true }),
   PROYECTS: buildUrl("proyectos/", { useAbsolute: false }),
   CONTACT: buildUrl("contacto/", { useAbsolute: false }),
   GITHUB_PROFILE: buildUrl("https://github.com/yaqui-sieras/"),
