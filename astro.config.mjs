@@ -49,11 +49,18 @@ const getDeploymentSite = () => {
 
 /**
  * Determina la ruta base (`base`) de la aplicación.
- * Asigna una subcarpeta dinámicamente en GitHub Pages (`/nombre-repo/`) y la raíz (`/`) en el resto de plataformas.
+ * Asigna una subcarpeta dinámicamente en repositorios secundarios de GitHub Pages (`/nombre-repo/`)
+ * y la raíz (`/`) en User Pages (.github.io) o en el resto de plataformas.
  * @returns {string} Ruta base normalizada.
  */
 const getDeploymentBase = () => {
   if (isGitHubActions && ghRepoName) {
+    const userPageRepo = `${ghOwner}.github.io`.toLowerCase();
+
+    if (ghRepoName.toLowerCase() === userPageRepo) {
+      return "/";
+    }
+
     return `/${ghRepoName}/`;
   }
 
