@@ -101,6 +101,6 @@ export interface SocialLink {
 
 export const SOCIAL_LINKS: readonly SocialLink[] = [
   { name: 'GitHub', url: 'https://github.com/yaqui-sieras' },
-  { name: 'LinkedIn', url: 'https://linkedin.com/in/yaqui-sieras' },
+  { name: 'LinkedIn', url: 'https://linkedin.com/in/yaqui-sieras-vr' },
   { name: 'Email', url: 'mailto:tu-email@ejemplo.com', target: '_self' },
 ] as const;
