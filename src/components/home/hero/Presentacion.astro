@@ -1,13 +1,22 @@
 ---
-//
-import Informacion from "@components/home/hero/presentacion/Informacion.astro";
-import Imagen from "@components/home/hero/presentacion/Imagen.astro";
+// @components/home/hero/Presentacion.astro
+import Informacion from '@components/home/hero/presentacion/Informacion.astro';
 
+import Image from '@/components/ui/common/Image.astro';
+import miFoto from '@assets/imgs/yo.png';
 ---
 
 <article class="presentacion">
   <Informacion />
-  <Imagen />
+  <Image
+    src={miFoto}
+    alt="Foto de Yaqui Sieras"
+    width={250}
+    height={250}
+    variant="card"
+    blur="15px"
+    brightness={0.7}
+  />
 </article>
 
 <style>

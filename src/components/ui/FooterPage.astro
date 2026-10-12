@@ -1,11 +1,10 @@
 ---
 // @components/ui/FooterPage.astro
-import FlexContainer from "@components/ui/common/FlexContainer.astro"
-import Brand from "@components/ui/footer/Brand.astro";
-import Navigation from "@components/ui/common/Navigation.astro";
+import FlexContainer from '@components/ui/common/FlexContainer.astro';
+import Brand from '@components/ui/footer/Brand.astro';
+import Navigation from '@components/ui/common/Navigation.astro';
 import Socials from '@components/ui/footer/Socials.astro';
-import Legal from "@components/ui/footer/Legal.astro";
-
+import Legal from '@components/ui/footer/Legal.astro';
 ---
 
 <footer class="footer_page">
@@ -19,7 +18,7 @@ import Legal from "@components/ui/footer/Legal.astro";
 </footer>
 
 <style>
-  .footer_page{
+  .footer_page {
     color: #e2e8f0;
     background-color: #161618;
     padding-block-start: 3rem;
@@ -32,13 +31,13 @@ import Legal from "@components/ui/footer/Legal.astro";
     justify-content: center;
     gap: 2rem;
   }
-  
+
   :global(.footer_nav .nav_link) {
     font-size: 0.9rem;
     color: #a1a1aa;
     transition: color 0.2s ease;
 
-    &:hover{
+    &:hover {
       color: #ffffff;
     }
   }

@@ -1,15 +1,13 @@
 ---
-// src/components/ui/HeaderPage.astro
+// @components/ui/HeaderPage.astro
 import logoYS from '@assets/imgs/logoY-S.png';
 import HeaderLogo from '@components/ui/header/HeaderLogo.astro';
-import Navigation from "@components/ui/common/Navigation.astro";
-//import Navigation from '@components/ui/header/Navigation.astro';
-
+import Navigation from '@components/ui/common/Navigation.astro';
 ---
 
 <header class="header_page">
   <div class="header_inner">
-    <HeaderLogo img={logoYS.src}/>
+    <HeaderLogo img={logoYS.src} />
     <Navigation class="header_nav" ariaLabel="Navegación principal" />
   </div>
 </header>
@@ -45,7 +43,8 @@ import Navigation from "@components/ui/common/Navigation.astro";
     padding: 0.5rem 0.8rem;
     transition: color 0.2s ease;
 
-    &:hover, &.nav_link--active{
+    &:hover,
+    &.nav_link--active {
       color: #00d26a;
     }
   }
