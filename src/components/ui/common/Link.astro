@@ -1,6 +1,6 @@
 ---
-// src/components/ui/common/Link.astro
-import { isExternalUrl } from "@/constants/routes";
+// @components/ui/common/Link.astro
+import { isExternalUrl } from '@/constants/routes';
 
 interface Props {
   href: string;
@@ -9,19 +9,18 @@ interface Props {
   [key: string]: unknown;
 }
 
-const { href, target, class: className = "", ...rest } = Astro.props;
+const { href, target, class: className = '', ...rest } = Astro.props;
 
 const isExternal = isExternalUrl(href);
-const finalTarget = target ?? (isExternal ? "_blank" : "_self");
-const rel = finalTarget=== "_blank"? "noopener noreferrer" : undefined;
-
+const finalTarget = target ?? (isExternal ? '_blank' : '_self');
+const rel = finalTarget === '_blank' ? 'noopener noreferrer' : undefined;
 ---
 
 <a
-  class:list={["ui_link", className]}
-  href={href} 
-  target={finalTarget} 
-  rel={rel}  
+  class:list={['ui_link', className]}
+  href={href}
+  target={finalTarget}
+  rel={rel}
   {...rest}
 >
   <slot />

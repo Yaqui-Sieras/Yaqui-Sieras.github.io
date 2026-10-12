@@ -6,14 +6,14 @@ interface Props {
   class?: string;
 }
 
-const { 
-  maxWidth = "1200px", 
-  gap = "1.5rem",
-  class: className = ""
+const {
+  maxWidth = '1200px',
+  gap = '1.5rem',
+  class: className = '',
 } = Astro.props;
 ---
 
-<div class:list={["flex-container", className]}>
+<div class:list={['flex-container', className]}>
   <slot />
 </div>
 

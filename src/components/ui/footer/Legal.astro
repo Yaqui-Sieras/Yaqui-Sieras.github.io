@@ -1,8 +1,8 @@
 ---
 // @components/ui/footer/Legal.astro
-import Link from "@components/ui/common/Link.astro";
-import { LEGAL_LINKS } from "@/constants/routes";
-import { SITE_INFO } from "@/constants/site";
+import Link from '@components/ui/common/Link.astro';
+import { LEGAL_LINKS } from '@/constants/routes';
+import { SITE_INFO } from '@/constants/site';
 
 interface Props {
   author?: string;
@@ -10,10 +10,10 @@ interface Props {
   links?: readonly { label: string; href: string }[];
 }
 
-const { 
-  author = SITE_INFO.author, 
-  license = SITE_INFO.license, 
-  links = LEGAL_LINKS 
+const {
+  author = SITE_INFO.author,
+  license = SITE_INFO.license,
+  links = LEGAL_LINKS,
 } = Astro.props;
 
 const currentYear = new Date().getFullYear();
@@ -21,7 +21,9 @@ const currentYear = new Date().getFullYear();
 
 <div class="footer-legal">
   <div class="legal-info">
-    <small>&copy; {currentYear} {author}.</small>
+    <small>
+      &copy; {currentYear} {author}.
+    </small>
     {license && <small class="license">• Licencia {license}</small>}
   </div>
 
