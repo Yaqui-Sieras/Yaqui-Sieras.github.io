@@ -18,8 +18,8 @@
     "prettier-plugin-astro": "1.0.0"
   },
   "dependencies": {
-    "astro": "7.3.2",
     "@astrojs/sitemap": "3.7.4",
+    "astro": "7.3.8",
     "sentei-css": "0.2.0"
   }
 }
