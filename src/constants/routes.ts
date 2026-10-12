@@ -80,7 +80,7 @@ export interface NavItem {
 
 export const NAV_ITEMS: readonly NavItem[] = [
   { label: 'Inicio', href: ROUTES.HOME, icon: '🏯' },
-  { label: 'Porfolio', href: ROUTES.PORFOLIO, icon: '💼' },
+  { label: 'Porfolio', href: ROUTES.PORFOLIO, icon: '💼', target: '_blank' },
   { label: 'Proyectos', href: ROUTES.PROYECTS, icon: '💻' },
   { label: 'Contacto', href: ROUTES.CONTACT, icon: '📩' },
   { label: 'GitHub', href: ROUTES.GITHUB_PROFILE, icon: '🐈‍⬛' },
