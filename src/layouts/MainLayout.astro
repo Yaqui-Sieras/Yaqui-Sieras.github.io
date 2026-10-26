@@ -5,6 +5,7 @@ import FooterPage from '@components/ui/FooterPage.astro';
 import { buildUrl } from '@constants/routes.ts';
 import faviconsvg from '@assets/favicons/favicon.svg';
 import ogImage from '@assets/imgs/og-image.png';
+import Analytics from '@vercel/analytics/astro';
 import 'sentei-css';
 
 interface Props {
@@ -54,6 +55,9 @@ const faviconIcoPath = buildUrl('/favicon.ico');
     <meta name="twitter:title" content={titlePage} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={socialImageURL} />
+
+    <!-- Vercel Analytics -->
+    <Analytics />
   </head>
   <body>
     <div class="page">
